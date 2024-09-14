@@ -1,28 +1,42 @@
 
 body{
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #e2ded4;
 }
 
-body>header>h1{
-    font-family:"Fredoka One",sans-serif;
-}
-
-body>header{
+body>header {
     margin: 0px;
-    background-color: orange;
+    background-color: #3E3E3C;
     color: white;
-    display:flex;
-    height: 15vh;
-    justify-content: space-around;
+    display: flex;
+    height: 20vh;
+    justify-content: space-around; /* Aligns content to the left */
     align-items: center;
+    padding: 0 20px; /* Optional padding for spacing */
+}
+
+body>header>div>img {
+    margin-right: 10px; /* Adjust space between the image and the logo */
+    width: 100px; 
+    height: auto; 
+    border-radius: 50%;
+}
+
+.logo-container {
+    display: flex; /* Group image and h1 together */
+    align-items: center;
+}
+
+body>header>div>h1 {
+    font-family: "Baskervville", sans-serif;
 }
 
 #nav-ul{display: flex;}
 
 #nav-ul > li {
     padding: 8px;
-    margin: 16px;
+    margin: 5px;
  }
  body > header > nav > ul {
     list-style: none;
@@ -50,44 +64,54 @@ body>main article{
 
 #main-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 #main-content>div{
-    width: 70%;
+    width: 90%;
 }
 
-body>footer{
+body > footer {
     margin: 0px;
-    background-color: orange;
+    background-color: #3E3E3C;
     color: white;
     padding: 16px;
     text-align: center;
 }
 
-form{text-align: center;}
-
-h2{
+form {
     text-align: center;
 }
 
-#footer-ul{
+h2 {
+    text-align: center;
+}
+
+#footer-ul {
     display: flex;
+    justify-content: center; /* Center the columns horizontally */
     list-style: none;
+    padding: 0;
 }
 
-#footer-ul>div>li{
-    margin-left: 12px;
+#footer-ul > div {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically in each column */
+    align-items: center; /* Center the links horizontally in each column */
+    margin: 0 12px; /* Add some margin between columns */
 }
 
-#footer-ul>div>li>a{
+#footer-ul > div > li {
+    margin: 5px 0; /* Add some space between links vertically */
+}
+
+#footer-ul > div > li > a {
     color: white;
     text-decoration: none;
     text-align: center;
 }
 
-img{
-    border-radius: 50%;
+ul {
+    margin: 0px;
+    padding: 0; /* Remove default padding */
 }
-
-ul{margin: 0px;}
